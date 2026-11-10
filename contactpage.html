@@ -1,0 +1,76 @@
+<!-- 
+  Name: Takreem Malik
+  Roll Number: 26i-3075
+  Section: SE-B
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pet Adoption - Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #caf0f8;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ADOPT ME ♡</h1>
+
+  <!-- Navigation Bar -->
+  <nav style="margin-bottom: 15px;">
+    <a href="index.html">Home</a> | 
+    <a href="petsgrid.html">Our Pets</a> | 
+    <a href="contactpage.html">Contact Us</a>
+  </nav>
+
+  <input type="text" placeholder="Search...">
+
+  <h2>GET IN TOUCH</h2>
+
+  <div class="contact-form">
+    <form onsubmit="handleSubmit(event)">
+      <label>Name:</label>
+      <input type="text" required placeholder="Your Name">
+      
+      <label>Email:</label>
+      <input type="email" required placeholder="Your Email">
+      
+      <label>Message:</label>
+      <textarea rows="4" required placeholder="Write your query..."></textarea>
+      
+      <button type="submit">Submit Query</button>
+    </form>
+  </div>
+
+  <h3>CONTACT DETAILS:</h3>
+  <p>Call us at 0300-1234567 to complete adoption.</p>
+
+  <script>
+    function adoptPet(petName) {
+      console.log("Adopt me button was clicked for " + petName);
+      window.alert("Thank you! You selected " + petName + " for adoption.");
+    }
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      window.alert("Thank you for contacting us! We will get back to you soon.");
+    }
+  </script>
+
+</body>
+</html>

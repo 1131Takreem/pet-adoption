@@ -1,0 +1,116 @@
+<!-- 
+  Name: Takreem Malik
+  Roll Number: 26i-3075
+  Section: SE-B
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pet Adoption - Our Pets</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pet-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .pet-card {
+      background-color: white;
+      border: 1px solid #caf0f8;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+    .pet-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ADOPT ME ♡</h1>
+
+  <!-- Navigation Bar -->
+  <nav style="margin-bottom: 15px;">
+    <a href="index.html">Home</a> | 
+    <a href="petsgrid.html">Our Pets</a> | 
+    <a href="contactpage.html">Contact Us</a>
+  </nav>
+
+  <input type="text" placeholder="Search...">
+
+  <h2>OUR AVAILABLE PETS</h2>
+
+  <div class="pet-grid">
+    <!-- Card 1 -->
+    <div class="pet-card">
+      <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300" alt="Coco">
+      <h3>Coco</h3>
+      <p><b>Breed:</b> Persian Cat</p>
+      <p><b>Age:</b> 2 Years</p>
+      <button onclick="adoptPet('Coco')">Adopt</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="pet-card">
+      <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=300" alt="Buddy">
+      <h3>Buddy</h3>
+      <p><b>Breed:</b> Golden Retriever</p>
+      <p><b>Age:</b> 1 Year</p>
+      <button onclick="adoptPet('Buddy')">Adopt</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="pet-card">
+      <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=300" alt="Luna">
+      <h3>Luna</h3>
+      <p><b>Breed:</b> Siamese Cat</p>
+      <p><b>Age:</b> 3 Years</p>
+      <button onclick="adoptPet('Luna')">Adopt</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="pet-card">
+      <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=300" alt="Max">
+      <h3>Max</h3>
+      <p><b>Breed:</b> Husky</p>
+      <p><b>Age:</b> 2 Years</p>
+      <button onclick="adoptPet('Max')">Adopt</button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="pet-card">
+      <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=300" alt="Milo">
+      <h3>Milo</h3>
+      <p><b>Breed:</b> British Shorthair</p>
+      <p><b>Age:</b> 6 Months</p>
+      <button onclick="adoptPet('Milo')">Adopt</button>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="pet-card">
+      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=300" alt="Rocky">
+      <h3>Rocky</h3>
+      <p><b>Breed:</b> Beagle</p>
+      <p><b>Age:</b> 4 Years</p>
+      <button onclick="adoptPet('Rocky')">Adopt</button>
+    </div>
+  </div>
+
+  <h3>CONTACT DETAILS:</h3>
+  <p>Call us at 0300-1234567 to complete adoption.</p>
+
+  <script>
+    function adoptPet(petName) {
+      console.log("Adopt me button was clicked for " + petName);
+      window.alert("Thank you! You selected " + petName + " for adoption.");
+    }
+  </script>
+
+</body>
+</html>
