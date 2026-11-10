@@ -1,0 +1,69 @@
+<!-- 
+  Name: Takreem Malik
+  Roll Number: 26i-3075
+  Section: SE-B
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pet Adoption Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>ADOPT ME ♡</h1>
+
+  <input type="text" placeholder="Search...">
+
+  <div>
+    <br>
+    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300" alt="Pet Image" width="200">
+    <h2>PET ADOPTION CARD</h2>
+    <button onclick="adoptPet('Featured Pet')">Adopt</button>
+  </div>
+
+  <br>
+
+  <table border="1">
+    <tr>
+      <th>PET Name</th>
+      <th>Breed</th>
+      <th>Gender</th>
+      <th>Rating</th>
+      <th>Adopt</th>
+    </tr>
+    <tr>
+      <td>Coco</td>
+      <td>Persian</td>
+      <td>Female</td>
+      <td>4.8</td>
+      <td><button onclick="adoptPet('Coco')">Adopt me</button></td>
+    </tr>
+    <tr>
+      <td>Milo</td>
+      <td>Persian</td>
+      <td>Female</td>
+      <td>4.5</td>
+      <td><button onclick="adoptPet('Milo')">Adopt me</button></td>
+    </tr>
+    <tr>
+      <td>Max</td>
+      <td>Husky</td>
+      <td>Male</td>
+      <td>5.0</td>
+      <td><button onclick="adoptPet('Max')">Adopt me</button></td>
+    </tr>
+  </table>
+
+  <h3>CONTACT DETAILS:</h3>
+  <p>Call us at 0300-1234567 to complete adoption.</p>
+
+  <script>
+    function adoptPet(petName) {
+      console.log("Adopt me button was clicked for " + petName);
+      window.alert("Thank you! You selected " + petName + " for adoption.");
+    }
+  </script>
+
+</body>
+</html>
