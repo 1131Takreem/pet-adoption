@@ -19,4 +19,6 @@ A responsive pet adoption website designed to connect loving homes with rescued 
 -  Gemini 
 
 ## Live Website
-[https://1131takreem.github.io/pet-adoption/](https://1131takreem.github.io/pet-adoption/)
+[https://1131takreem.github.io/pet-adoption/]
+
+(https://1131takreem.github.io/pet-adoption/)
