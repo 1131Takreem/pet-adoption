@@ -18,7 +18,8 @@ A responsive pet adoption website designed to connect loving homes with rescued 
 ## AI Tools Used
 -  Gemini 
 
-## Live Website
-[https://1131takreem.github.io/pet-adoption/]
+## github link
+https://github.com/1131Takreem/pet-adoption
 
-(https://1131takreem.github.io/pet-adoption/)
+## website link
+[https://1131takreem.github.io/pet-adoption/]
